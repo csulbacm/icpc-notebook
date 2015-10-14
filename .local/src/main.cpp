@@ -73,7 +73,7 @@ static int callback_http(struct libwebsocket_context *context,
 	struct timeval tv;
 	int n, m;
 	unsigned char *p;
-	char *other_headers;
+	char *other_headers = 0;
 	static unsigned char buffer[4096];
 	struct stat stat_buf;
 	struct per_session_data__http *pss =
